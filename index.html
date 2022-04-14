@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSweeper</title>
+    <link rel="icon" type="image/x-icon" href="bomb-svgrepo-com.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="startMenu">
+        <h1>Welcome To MineSweeper</h1>
+        <input type="number" id="yInput" placeholder="Height">
+        <input type="number" id="xInput" placeholder="Width">
+
+        <div class="colomn difficulty">
+            <div>
+                <input onclick="choseBuiltDifficulty()" type="radio" name="difficulty" id="d1" value="d1">
+                <label for="d1">Walk in the park</label>
+            </div>
+            <div>
+                <input onclick="choseBuiltDifficulty()" type="radio" name="difficulty" id="d2" value="d2" checked>
+                <label for="d2">Getting there</label>
+            </div>
+            <div>
+                <input onclick="choseBuiltDifficulty()" type="radio" name="difficulty" id="d3" value="d3">
+                <label for="d3">Death Valley</label>
+            </div>
+            <div style="height:50px ;padding:0;">
+                <input onclick="showManualDifficulty()" type="radio" name="difficulty" id="dx" value="manual">
+                <label for="dx">Set custom difficulty</label>
+                <br>
+                <input style="display: none;" type="number" id="bombInput" placeholder="Bomb Count">
+            </div>
+            <button onclick="start()"> Start</button>
+        </div>
+    </div>
+
+    <main id="back">
+    </main>
+    <main id="cont">
+    </main>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
