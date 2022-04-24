@@ -226,6 +226,7 @@ function start() {
             setTimeout(function () {
                 for (let i = 0; i < height * width - bombCount; i++) {
                     document.getElementsByClassName('back-default')[i].classList.add("bomb");
+                    document.getElementsByClassName('back-default')[i].textContent="";
                 }
                 setTimeout(function () {
 
